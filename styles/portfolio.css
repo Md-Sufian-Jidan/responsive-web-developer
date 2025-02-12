@@ -204,7 +204,44 @@ textarea {
 
     .skills-container,
     .resume-container,
+    .banner,
+    nav,
+    nav>ul,
     footer {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        gap: 20px;
+    }
+
+    .btn-primary {
+        margin: 10px 0px;
+    }
+
+    .banner-profile-picture {
+        width: 100%;
+    }
+
+    nav,
+    .about,
+    .banner,
+    .resume-container,
+    footer,
+    .skills-container {
+        margin: 10px;
+    }
+
+    .header {
+        background-image: none;
+    }
+
+    .about,
+    .banner {
+        padding: 20px;
+    }
+
+    .about-items {
         flex-direction: column;
     }
 
@@ -226,9 +263,20 @@ textarea {
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
     .skills-container,
-    .resume-container {
+    .resume-container,
+    .banner,
+    nav,
+    nav>ul,
+    footer {
         flex-direction: column;
-        margin: 20px;
+    }
+
+    .about {
+        padding: 50px;
+    }
+
+    .about-items {
+        flex-direction: column;
     }
 
     footer {
